@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/MITS-scaled.jpg');
+    background-size: cover;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(58, 58, 58);
+    padding-bottom: 20px;
+}
+
+.nav img {
+    width: 60px;
+}
+
+.logo,
+.links,
+.contact {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+}
+.landing{
+    display: flex;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,rgb(46, 42, 42),rgba(0,0,0,0));
+}
+.left-section,.right-section{
+    height: 100%;
+    width: 50%;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.nba img{
+    width: 100px;
+}
+.left-section .nba{
+    display: flex;
+    gap: 30px;
+}
+.right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-section div{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.right-section input{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px white;
+    color: white;
+    animation:  duration timing-function delay iteration-count direction fill-mode;
+    background-color: rgb(58, 58, 58);
+}
+.right-section input::placeholder{
+    color: rgb(194, 188, 188);
+    padding: 5px;
+}
+.right-section .form{
+    background-color: rgb(58, 58, 58);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.right-section button{
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #B31312;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.right-section button:active,.right-section button:hover{
+    animation: changecolor 5s linear .1s;
+}
+@keyframes changecolor {
+    0%{
+        background-color:#B31312;
+    }
+    10%{
+        background-color: rgb(99, 28, 28);
+    }
+    90%{
+        background-color: rgb(122, 26, 26);
+    }
+    100%{
+        background-color: #B31312;
+    }
+}
+.about{
+    text-align: center;
+    padding: 20px;
+}
+.news{
+    margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    width: 200px;
+    height: auto;
+    box-shadow: 7px 6px 14px -7px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.box:hover{
+    animation: scale .5s linear .1s;
+}
+.box img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.members img{
+    width: 100%;
+}
+.visonnmission{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+}
+.visonnmission .module{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.module .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.team{
+    text-align: center;
+    align-items: center;
+}
+.members{
+    text-align: center;
+    height: 300px;
+    width: 200px;
+}
+.team-members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.team-members img{
+    height:200px;
+    border-radius:50%;
+    object-fit: cover;
+    border: solid 4px red;
+}
+.programs{
+    text-align: center;
+}
+.gallery {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+.gallery .Courses{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 7px 6px 14px -7px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.gallery .Courses:hover{
+    animation: change 5s linear .1s;
+}
+@keyframes change {
+    0%{
+        background-color: white;
+    }
+    10%{
+        background-color: red;
+        color: white;
+    }
+    90%{
+        background-color: red;
+        color: white;
+    }
+    100%{
+        background-color: white;
+    }
+}
+footer{
+    padding: 40px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+@media (max-width:880px) {
+    .team-members{
+        flex-direction: column;
+        align-items: center;
+    }
+    .news{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:700px) {
+    .landing{
+        flex-direction: column;
+        align-items: center;
+    }    
+}
+span{
+    font-style: italic;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.campus{
+    text-align: center;
+}
